@@ -25,7 +25,7 @@
       context.lineJoin = "round"
       context.lineCap = "round"
       context.strokeStyle = 'white'
-      context.font = canvasFontStyles[index] + ' 30px Apple Color Emoji,arial'
+      context.font = canvasFontStyles[index] + ' 30px arial'
       context.textBaseline = 'top'
       context.lineWidth = 2.0
       context.textAlign = 'left'
