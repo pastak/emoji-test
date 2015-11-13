@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+	<script src='webfont.js'></script>
+	<style>
+	/*
+		Emoji Symbols Font (c)blockworks - Kenichi Kaneko
+		http://emojisymbols.com/
+	*/
+	@font-face {
+		font-family: emojiSymbols;
+		src: url(/EmojiSymbols-Regular.woff);
+	}
+		div {
+			float: left;
+			margin-left: 30px;
+		}
+		div > span {
+			font-size: 30px;
+			font-family: emojiSymbols, arial;
+			height: 40px;
+			display: block;
+			background: #ccc
+		}
+		canvas {
+			background: #ccc;
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+	UserAgent: <span id='browser'></span><br />
+	<div style='width: 200px;'>
+		<h1>TextNode</h1>
+		<h2>Regular</h2>
+		<span>abc🍻💕😁✨</span>
+		<h2>Bold</h2>
+		<span style="font-weight: bold;">abc🍻💕😁✨</span>
+		<h2>Italic</h2>
+		<span style="font-style: italic;">abc🍻💕😁✨</span>
+		<h2>Bold Italic</h2>
+		<span style="font-style: italic;font-weight: bold;">abc🍻💕😁✨</span>
+	</div>
+	<div style='width: 300px;'>
+		<h1>Canvas (Fill Text)</h1>
+		<h2>Regular</h2>
+		<canvas class='canvas-normal-text'></canvas>
+		<h2>Bold</h2>
+		<canvas class='canvas-normal-text'></canvas>
+		<h2>Italic</h2>
+		<canvas class='canvas-normal-text'></canvas>
+		<h2>Bold Italic</h2>
+		<canvas class='canvas-normal-text'></canvas>
+	</div>
+	<div style='width: 400px;'>
+		<h1>Canvas (Stroke Text)</h1>
+		<h2>Regular</h2>
+		<canvas class='canvas-stroke-text'></canvas>
+		<h2>Bold</h2>
+		<canvas class='canvas-stroke-text'></canvas>
+		<h2>Italic</h2>
+		<canvas class='canvas-stroke-text'></canvas>
+		<h2>Bold Italic</h2>
+		<canvas class='canvas-stroke-text'></canvas>
+	</div>
+</body>
+</html>
